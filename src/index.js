@@ -9,7 +9,7 @@ import Counter from "./components/counterComponents";
 ReactDOM.render(
     <React.Fragment>
         <Counter/>
-        <button>Increment</button>
+
     </React.Fragment>
     ,
     document.getElementById('root')
