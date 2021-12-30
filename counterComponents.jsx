@@ -5,9 +5,15 @@ class Counter extends Component {
         count: 0
 
     };
+    //This is one way to bind eventhandlers to this the arrow function below is another but is experimental
+    //it seems to be working as of 12/30/21
+    // constructor() {
+    //     super();
+    //    this.handleIncrement = this.handleIncrement.bind(this);
+    // }
 
-    handleIncrement() {
-        console.log('clicked');
+    handleIncrement = () => {
+        console.log('clicked', this);
     }
 
     render() {
