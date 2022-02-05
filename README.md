@@ -2,6 +2,8 @@
 
 Going through the Code with Mosh react tutorials
 
+2/5/2022 learned about argument destructuring. should make things a little simpler goin forward
+
 2/4/22 learned about lifting up the state.  note: I really need to get better at updating the readme.
 
 1/30/2022 Learned how to work with the 'children' prop as well as how to raise and handle events
