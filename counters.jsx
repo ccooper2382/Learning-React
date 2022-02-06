@@ -4,6 +4,7 @@ import Counter from "./counter";
 class Counters extends Component {
 
     render() {
+        console.log('counters-rendered')
         // this line is argument destructuring so the code is simpler instead of doing this.props.onReset and so on
         // make the const then set it to equal this.props
         const {onReset, counters, onDelete, onIncrement} = this.props;

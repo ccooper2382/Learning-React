@@ -14,6 +14,15 @@ class App extends Component{
         ]
     }
 
+    constructor() {
+        super();
+        console.log('app - constructor')
+    }
+
+    componentDidMount() {
+        console.log('app-mounted')
+    }
+
 
     handleReset = () => {
         const counters = this.state.counters.map(c => {c.value=0; return c;});
@@ -34,6 +43,7 @@ class App extends Component{
 
     }
   render() {
+        console.log('app-rendered')
   return (
       <React.Fragment>
       <Navbar totalCounters={this.state.counters.filter(c => c.value > 0).length}/>

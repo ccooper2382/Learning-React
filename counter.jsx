@@ -8,18 +8,28 @@ class Counter extends Component {
     //     super();
     //    this.handleIncrement = this.handleIncrement.bind(this);
     // }
+    componentDidUpdate(prevProps, prevState) {
+        console.log('prevProps', prevProps);
+        console.log('prevState', prevState);
+    }
 
+    componentWillUnmount() {
+        console.log('counter-unmount');
+    }
 
     render() {
-
+        console.log('counter-rendered')
 
         return (
             <div>
 
-                <span  className={this.getBadgeClasses()}>{this.formatCount()}</span>
-                <button onClick={() => this.props.onIncrement(this.props.counter) }
-                        className="btn btn-secondary btn-sm">Increment</button>
-                <button onClick={()=> this.props.onDelete(this.props.counter.id)} className="btn btn-danger btn-sm m-2">Delete</button>
+                <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
+                <button onClick={() => this.props.onIncrement(this.props.counter)}
+                        className="btn btn-secondary btn-sm">Increment
+                </button>
+                <button onClick={() => this.props.onDelete(this.props.counter.id)}
+                        className="btn btn-danger btn-sm m-2">Delete
+                </button>
             </div>
 
         );
