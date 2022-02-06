@@ -2,6 +2,8 @@
 
 Going through the Code with Mosh react tutorials
 
+2/6/2022 Learned about the component life cycle.
+
 2/5/2022 learned about argument destructuring. should make things a little simpler goin forward
 
 2/4/22 learned about lifting up the state.  note: I really need to get better at updating the readme.
