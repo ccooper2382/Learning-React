@@ -7,7 +7,7 @@ class Counters extends Component {
         console.log('counters-rendered')
         // this line is argument destructuring so the code is simpler instead of doing this.props.onReset and so on
         // make the const then set it to equal this.props
-        const {onReset, counters, onDelete, onIncrement} = this.props;
+        const {onReset, counters, onDelete, onIncrement, onDecriment} = this.props;
         return (
             <div>
                 <button onClick={onReset} className="btn btn-primary btn-sm m-2">Reset</button>
@@ -15,6 +15,7 @@ class Counters extends Component {
                     <Counter key={counter.id}
                              onDelete={onDelete}
                              onIncrement={onIncrement}
+                             onDecriment={onDecriment}
                              counter={counter}>
 
                     </Counter>
